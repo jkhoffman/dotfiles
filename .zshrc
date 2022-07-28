@@ -55,11 +55,11 @@ export PATH="$PATH:$(yarn global bin)"
 [ -s "/Users/jefferyhoffman/.bun/_bun" ] && source "/Users/jefferyhoffman/.bun/_bun"
 
 # Bun
-export BUN_INSTALL="/Users/jefferyhoffman/.bun"
+export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Dotfiles config
-alias config='/usr/bin/git --git-dir=/Users/jefferyhoffman/.cfg/ --work-tree=/Users/jefferyhoffman'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"

@@ -52,7 +52,7 @@ export PATH="$PATH:$(yarn global bin)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # bun completions
-[ -s "/Users/jefferyhoffman/.bun/_bun" ] && source "/Users/jefferyhoffman/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # Bun
 export BUN_INSTALL="$HOME/.bun"

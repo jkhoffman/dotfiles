@@ -1,0 +1,18 @@
+[bell]
+animation = "EaseOutExpo"
+
+[font]
+builtin_box_drawing = true
+size = 14.0
+
+[font.normal]
+family = "FiraCode Nerd Font Mono Ret"
+style = "Retina"
+
+[window]
+option_as_alt = "Both"
+resize_increments = false
+
+[window.dimensions]
+columns = 120
+lines = 52

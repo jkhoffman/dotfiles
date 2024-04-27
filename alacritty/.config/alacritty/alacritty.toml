@@ -3,16 +3,19 @@ animation = "EaseOutExpo"
 
 [font]
 builtin_box_drawing = true
-size = 14.0
+size = 15.0
 
 [font.normal]
-family = "FiraCode Nerd Font Mono Ret"
-style = "Retina"
+family = "OperatorMonoSSmLig Nerd Font"
+style = "Light"
 
 [window]
 option_as_alt = "Both"
 resize_increments = false
+dynamic_title = true
+decorations = "None"
+padding = { x = 5, y = 5 }
 
 [window.dimensions]
 columns = 120
-lines = 52
+lines = 48

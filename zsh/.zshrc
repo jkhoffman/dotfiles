@@ -18,7 +18,7 @@ CASE_SENSITIVE="true"
 zstyle ':omz:update' mode auto      # update automatically without asking
 
 # Load plugins
-plugins=(git brew colorize npm yarn macos fzf zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git brew colorize npm yarn pnpm macos fzf zsh-syntax-highlighting zsh-autosuggestions)
 
 # OhMyZsh
 source $ZSH/oh-my-zsh.sh
@@ -43,12 +43,12 @@ else
 fi
 
 # Python
-export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
+#export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

@@ -3,7 +3,7 @@ animation = "EaseOutExpo"
 
 [font]
 builtin_box_drawing = true
-size = 15.0
+size = 16.0
 
 [font.normal]
 family = "OperatorMonoSSmLig Nerd Font"
@@ -11,10 +11,9 @@ style = "Light"
 
 [window]
 option_as_alt = "Both"
-resize_increments = false
 dynamic_title = true
 decorations = "None"
-padding = { x = 5, y = 5 }
+padding = { x = 8, y = 8 }
 
 [window.dimensions]
 columns = 120

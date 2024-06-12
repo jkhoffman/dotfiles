@@ -23,6 +23,8 @@ plugins=(git brew colorize npm yarn pnpm macos fzf zsh-syntax-highlighting zsh-a
 # OhMyZsh
 source $ZSH/oh-my-zsh.sh
 
+export XDG_STATE_HOME=~/.local/state
+
 # Fast Node Manager
 eval "$(fnm env)"
 
@@ -44,11 +46,17 @@ fi
 
 # Python
 #export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
+source ~/.venv/bin/activate
+
+# Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH"
+
+# Flutter
+export PATH="$PATH:/Users/jefferyhoffman/.local/flutter/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

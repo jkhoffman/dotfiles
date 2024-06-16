@@ -15,13 +15,16 @@ return {
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
     "jay-babu/mason-null-ls.nvim",
-    -- overrides `require("mason-null-ls").setup(...)`
-    opts = {
-      ensure_installed = {
+    opts = function(_, opts)
+      opts.ensure_installed = {
         "stylua",
         "prettierd",
-      },
-    },
+      }
+      opts.ensure_installed = vim.tbl_filter(
+        function(server) return server ~= "selene" end,
+        opts.ensure_installed or {}
+      )
+    end,
   },
   {
     "jay-babu/mason-nvim-dap.nvim",

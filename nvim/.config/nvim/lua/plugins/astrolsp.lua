@@ -22,12 +22,13 @@ return {
       },
       timeout_ms = 1000, -- default format timeout
       disabled = {
-        "lua_ls"
-      }
+        "lua_ls",
+      },
     },
     -- enable servers that you already have installed without mason
     servers = {
-      "clangd"
+      "clangd",
+      "rust_analyzer",
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
@@ -54,11 +55,5 @@ return {
         },
       },
     },
-    -- A custom `on_attach` function to be run after the default `on_attach` function
-    -- takes two parameters `client` and `bufnr`  (`:h lspconfig-setup`)
-    on_attach = function(client, bufnr)
-      -- this would disable semanticTokensProvider for all clients
-      -- client.server_capabilities.semanticTokensProvider = nil
-    end,
   },
 }

@@ -28,7 +28,6 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       "clangd",
-      "rust_analyzer",
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {

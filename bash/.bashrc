@@ -124,24 +124,8 @@ fi
 
 eval "$(zoxide init bash)"
 
-##-----------------------------------------------------
-## synth-shell-prompt.sh
-if [ -f /home/jkhoffman/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$(echo $- | grep i)" ]; then
-	source /home/jkhoffman/.config/synth-shell/synth-shell-prompt.sh
-fi
-
-##-----------------------------------------------------
-## alias
-if [ -f /home/jkhoffman/.config/synth-shell/alias.sh ] && [ -n "$(echo $- | grep i)" ]; then
-	source /home/jkhoffman/.config/synth-shell/alias.sh
-fi
-
-##-----------------------------------------------------
-## better-history
-if [ -f /home/jkhoffman/.config/synth-shell/better-history.sh ] && [ -n "$(echo $- | grep i)" ]; then
-	source /home/jkhoffman/.config/synth-shell/better-history.sh
-fi
-
 # Initialize NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+source ~/.config/liquidprompt/liquidprompt

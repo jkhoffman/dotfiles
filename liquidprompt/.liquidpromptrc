@@ -19,6 +19,8 @@
 # You can also load multiple presets files in sequence.
 # See the 'contrib/presets/' directories for examples.
 
+source ~/.config/liquidprompt/contrib/presets/nerd-font.conf
+source ~/.config/liquidprompt/contrib/presets/colors/256-colors-dark.conf
 
 # String added directly before `LP_MARK_DEFAULT`, after all other
 # parts of the prompt. Can be used to tag the prompt in a way that is less
